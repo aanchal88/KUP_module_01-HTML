@@ -1,5 +1,7 @@
 # KUP_module_01-HTML
 
+This project covers the below user stories:-
+
 User Story #1: I can see a title with id="title" in H1 sized text.
 
 

@@ -15,13 +15,13 @@
 
       <!-- user story 4 to 16-->
       <label for="name" id="name-label">Name:</label>
-  	  <input type="text" id="name" required><br>
+  	  <input type="text" id="name" placeholder="Enter your name" required><br>
 
       <label for="email" id="email-label">Email</label>
-  	 <input type="email" id="email" pattern=".+@beststartupever.com" required><br>
+  	 <input type="email" id="email" placeholder="Enter your email" pattern=".+@beststartupever.com" required><br>
 
-     <label for="number" id="number-label">No. of colleges in ghaziabad</label>
-    <input type="number" id="number" min="1" max="10"><br>
+     <label for="number" id="number-label">Your college</label>
+    <input type="number" id="number" placeholder="Your college" min="1" max="10"><br>
 
     <!-- Dropdown-->
     <label for="dropdown">In which college you are?</label>
@@ -33,6 +33,42 @@
       <option value="KIET">KIET</option>
       <option value="SRM">SRM</option>
     </select>
+
+    <!-- Radio buttons-->
+    <label for="Gender">Gender</label>
+        <p>
+          <input type="radio" name="gender" value="male" checked> Male <br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+       </p>
+
+
+      <!--Checkboxes  -->
+      <label for="Techs">Technologies:</label><br><br>
+        <fieldset id="Techs">
+          <legend>(Check all that apply): </legend> 
+          <input type="checkbox" name="1"  value="front-end">front-end
+          <input type="checkbox" name="2"  value="back-end">Back-end
+          <input type="checkbox" name="3"  value="java">Java
+          <input type="checkbox" name="4"  value="rust">Rust
+          <input type="checkbox" name="5"  value="devops">DevOps
+          <input type="checkbox" name="6"  value="quality assurance">Quality Assurance
+          <input type="checkbox" name="7"  value="ML">ML
+          <input type="checkbox" name="8"  value="AI">AI
+          <input type="checkbox" name="9"  value="othercours">other Courses
+        </fieldset>
+
+        <br>
+
+       <!--TextArea -->
+      <label for="comments">Any Suggestions?</label><br><br>
+        <textarea id="comments" placeholder="enter a comment" rows="4" cols="50"></textarea>
+        <br><br>
+       
+        <!--Submit Button -->
+       <button id="submit">submit</button>
+
+
   </form>
 
 </body>  

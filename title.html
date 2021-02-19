@@ -13,14 +13,26 @@
      <!-- user story 3-->
     <form id="survey-form" action="#" method="post">
 
-      <!-- user story 4-->
-  	User Name: <input type="text" id="name" required><br>
+      <!-- user story 4 to 16-->
+      <label for="name" id="name-label">Name:</label>
+  	  <input type="text" id="name" required><br>
 
-       <!-- yser story 5(id="email") and user story 6(email validation) -->
-  	Email id: <input type="email" name="email" pattern=".+@beststartupever.com" required><br>
+      <label for="email" id="email-label">Email</label>
+  	 <input type="email" id="email" pattern=".+@beststartupever.com" required><br>
 
-       <!-- user story 7(id="number") and user story 8(number validation")-->
-  	No. of languages: <input type="number" id="number">
+     <label for="number" id="number-label">No. of colleges in ghaziabad</label>
+    <input type="number" id="number" min="1" max="10"><br>
+
+    <!-- Dropdown-->
+    <label for="dropdown">In which college you are?</label>
+    <select id="dropdown">
+      <option value="" disabled selection>Select an option</option>
+      <option value="Abes IT">Abes IT</option>
+      <option value="Abes EC">Abes EC</option>
+      <option value="AKG">AKG</option>
+      <option value="KIET">KIET</option>
+      <option value="SRM">SRM</option>
+    </select>
   </form>
 
 </body>  
